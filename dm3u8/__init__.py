@@ -62,7 +62,7 @@ class Dm3u8:
                     with open(filename, 'wb') as f:
                         print('正在下载%s' % filename)
                         print(response.url)
-                        print(response.content)
+                        # print(response.content)
                         f.write(self.decry(response.content))
                         print('下载%s完成' % filename)
                 else:
